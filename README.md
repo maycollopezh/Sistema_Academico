@@ -4,7 +4,7 @@ AISEA es una plataforma integral para la gestión académica, financiera y de re
 
 ## Características Principales y Arquitectura
 
-El sistema está diseñado para soportar alta concurrencia, reduciendo la latencia (cuellos de botella) al mínimo (alcanzando un 95% de eficiencia en operaciones críticas):
+El sistema está diseñado para soportar alta concurrencia, reduciendo la latencia (cuellos de botella) al mínimo:
 
 *   **Gestión Financiera (Colas - FIFO):** Procesamiento de pagos estrictamente en el orden de llegada (`Queue<T>`), evitando inconsistencias durante alta demanda.
 *   **Validación de Horarios (Árboles Binarios de Búsqueda - BST):** Prevención de choques de horarios en tiempo real usando inserción recursiva, logrando búsquedas con complejidad $O(\log n)$ sin saturar la base de datos.
@@ -17,7 +17,7 @@ El sistema está diseñado para soportar alta concurrencia, reduciendo la latenc
 
 ## Tecnologías Utilizadas
 *   **Lenguaje/Framework:** C# / .NET (Estructuras de `System.Collections.Generic`).
-*   **Base de Datos:** SQL Server (Persistencia a largo plazo).
+*   **Base de Datos:** MYSQL (Persistencia a largo plazo).
 *   **Arquitectura:** Híbrida (SQL + Memoria RAM).
 
 ## Cómo ejecutar el proyecto

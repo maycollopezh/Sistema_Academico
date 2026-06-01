@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Tipo de salida: ejecutable Windows (WinExe oculta la consola) -->
+    <OutputType>WinExe</OutputType>
+    <!-- Target Framework: .NET Framework 4.8 con soporte Windows Forms -->
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>SistemaAcademico</RootNamespace>
+    <AssemblyName>SistemaAcademico</AssemblyName>
+    <Nullable>disable</Nullable>
+    <!-- Permite usar characteristics de lenguaje más recientes -->
+    <LangVersion>latest</LangVersion>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Conector oficial MySQL para .NET -->
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <!-- Librería para exportar Excel sin Office instalado -->
+    <PackageReference Include="ClosedXML" Version="0.102.2" />
+  </ItemGroup>
+
+</Project>
